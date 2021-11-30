@@ -17,6 +17,9 @@ header{
     align-items: center;
     padding: 0 20px;
 }
+.burger-bar-container{
+    display: none;
+}
 .logo{
     font-family: Helvetica;
     font-size: 13px;
@@ -52,6 +55,9 @@ header{
     height: 30px;
     border-radius: 50%;
     background-image: url(../images/account-pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* footer */
@@ -177,8 +183,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .banner-info{
+    position: relative;
     max-width: 600px;
     width: 71%;
     padding-right: 40px;
@@ -359,7 +367,8 @@ footer{
     display: grid;
 }
 .happening-content-small{
-    margin: unset;
+    max-width: 360px;
+    width: 30%;
     width: 100%; 
 }
 .happening-pic-1{

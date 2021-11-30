@@ -62,4 +62,97 @@
     .trending-content:nth-child(2){
         margin-right: unset;
     }
+
+    /* happening now section */
+    .happening-content-container{    
+        display: grid;
+        grid-template: 900px 242px / 1fr;
+        grid-gap: 40px;
+    }
+    .happening-content-column-two{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+    }
+    .happening-content-small {
+        width: 100%;
+    }
+    .show-content{
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    /* header */
+    .burger-bar-container{
+        display: block;
+    }
+    .logo{
+        color: #A6ADB4;
+    }
+    .navigation-container{
+        display: none;
+    }
+    .account-container{
+        background-image: url(../images/avatar.png);
+    }
+
+    /* footer */
+    footer{
+        display: none;
+    }
+
+    /* home main */
+    /* more news section */
+    .banner-box,
+    .more-news-txt-container{
+        padding: 40px 24px;
+    }
+    .banner-box:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.15);
+    }
+    .more-news-content-box{
+        flex-direction: column;
+    }
+    .more-news-content:first-child{
+        margin-right: unset;
+        margin-bottom: 40px;
+    }
+
+    /* trending section */
+    .trending-content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .trending-content{
+        width: 100%;
+    }
+    .trending-content:first-child{
+        margin-right: unset;
+        margin-bottom: 40px;
+    }
+
+    /* happening now section */
+    .happening-content-column-two{
+        grid-template-columns: 1fr;
+    }
+    .happening-content{
+        padding: 32px 24px;
+    }
+    .happening-content-small{
+        max-width: 100%;
+    }
+    .happening-content-small:first-child{
+        padding-top: 40px;
+        border-top: 2px solid #EBEDED;
+    }
+    .show-content{
+        display: unset;
+    }
 }
