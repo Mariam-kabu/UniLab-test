@@ -1,4 +1,4 @@
-@media (max-width: 1024px){
+@media (max-width: 950px){
     /*footer */
     .footer-container{
         height: 316px;
@@ -69,7 +69,7 @@
         grid-template: 900px 242px / 1fr;
         grid-gap: 40px;
     }
-    .happening-content-column-two{
+    .happening-content-column-small{
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
     }
@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 720px){
+@media (max-width: 620px){
     /* header */
     .burger-bar-container{
         display: block;
@@ -139,7 +139,7 @@
     }
 
     /* happening now section */
-    .happening-content-column-two{
+    .happening-content-column-small{
         grid-template-columns: 1fr;
     }
     .happening-content{

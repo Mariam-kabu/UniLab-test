@@ -20,6 +20,17 @@ header{
 .burger-bar-container{
     display: none;
 }
+.bar-stick{
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: #343638;
+    border-radius: 1px;
+}
+.short-bar-stick{
+    width: 10px; 
+    margin: 4px 0;
+}
 .logo{
     font-family: Helvetica;
     font-size: 13px;
@@ -162,6 +173,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .more-news-section{
     width: 100%;
@@ -194,6 +206,7 @@ footer{
 .banner-header{
     font-family: Helvetica;
     font-size: 24px;
+    line-height: 34px;
     font-weight: bold;
     color: #FFFF;
 }
@@ -343,7 +356,7 @@ footer{
     grid-template: 900px / .66fr 0.34fr;
     grid-gap: 40px;
 }
-.happening-content-colunm-one{
+.happening-content-colunm-big{
     display: grid;
     row-gap: 40px;
 }
@@ -363,7 +376,7 @@ footer{
 .happening-content:last-child{
     background-image: url(../images/happening-2.png);
 }
-.happening-content-column-two{
+.happening-content-column-small{
     display: grid;
 }
 .happening-content-small{
