@@ -21,14 +21,26 @@
             max-width: 800px;
             width: 100%;
         }
+
+        p {
+            font: 18px/26px;
+            text-transform: capitalize;
+        }
+
+        span {
+            color: blue;
+        }
     </style>
 
 
     <h1>Where is the ISS?</h1>
     <p>
+        name: <span id="name"></span><br>
         latitude: <span id="lat"></span><br>
         longitude: <span id="long"></span><br>
-        visibility: <span id="vision"></span>
+        longitude: <span id="alti"></span><br>
+        visibility: <span id="vision"></span><br>
+        units: <span id="unit"></span>
     </p>
     <div id="map"></div>
 
@@ -46,14 +58,17 @@
         async function getData() {
             const response = await fetch(api_url);
             const data = await response.json();
-            const { latitude, longitude, visibility } = data;
+            const { name, id, latitude, longitude, altitude, visibility, units } = data;
 
             // add marker on the map
             L.marker([latitude, latitude]).addTo(map);
 
+            document.getElementById('name').textContent = name;
             document.getElementById('lat').textContent = latitude;
             document.getElementById('long').textContent = longitude;
+            document.getElementById('alti').textContent = altitude;
             document.getElementById('vision').textContent = visibility;
+            document.getElementById('unit').textContent = units;
 
         }
 
