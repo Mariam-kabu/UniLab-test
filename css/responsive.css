@@ -327,7 +327,4 @@
   .par-img {
     height: 180px;
   }
-  .par-txt:last-child {
-    margin-bottom: unset;
-  }
 }
