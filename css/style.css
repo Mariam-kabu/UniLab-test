@@ -626,7 +626,7 @@ input:focus {
   width: 80%;
   margin: 40px auto;
 }
-.num-order-box {
+.pagination-box {
   margin: 0 auto;
   width: 240px;
   display: flex;
@@ -637,6 +637,11 @@ input:focus {
   font: 11px/20px "Helvetica";
   color: #a6adb4;
   padding: 10px 0;
+  border-bottom: 2px solid #f6f8f9;
+}
+.num:hover:not(.active-num) {
+  color: #202124;
+  border-bottom: 2px solid #fa6980;
 }
 .active-num {
   color: #202124;
